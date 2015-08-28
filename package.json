@@ -1,0 +1,22 @@
+{
+  "name": "laws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "Reagan Thomas <reagan@reaganthomas.com> (http://reaganthomas.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "deep-equal": "^1.0.0",
+    "hifive": "^0.4.0",
+    "hifive-tap": "^0.3.0"
+  },
+  "dependencies": {
+    "claire": "^0.4.1"
+  }
+}
