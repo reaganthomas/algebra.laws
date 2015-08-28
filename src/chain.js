@@ -22,13 +22,14 @@
       'm.chain(f).chain(g)' is equivalent to 'm.chain((x) => f(x).chain(g))'
   */
   function associativity(f) {
-    return forAll(_.int).satisfy(function(a) {
+    return forAll(_.Int).satisfy(function(a) {
       function g(a) { return f(a * 2); }
       function h(a) { return f(a - 1); }
 
-      return f(a).chain(g).chain(h).isEqual(f(a).chain(function(x) {
-        return g(x).chain(h);
-      }));
+      var x = f(a).chain(g).chain(h);
+      var y = f(a).chain(function(x) { return g(x).chain(h); });
+
+      return x.isEqual(y);
     });
   }
 

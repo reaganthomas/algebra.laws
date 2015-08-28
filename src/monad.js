@@ -24,7 +24,7 @@
   function leftIdentity(f) {
     var M = f();
 
-    return forAll(_.int).satisfy(function(a) {
+    return forAll(_.Int).satisfy(function(a) {
       var m = M.of(a);
 
       return m.chain(function(b) {

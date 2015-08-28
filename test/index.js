@@ -33,7 +33,9 @@
     });
 
     describe('Chain', function() {
-      it('1. Associativity', function() { laws.chain.associativity(makeId).asTest()(); });
+      it('1. Associativity', function() {
+        laws.chain.associativity(makeId).asTest()();
+      });
     });
 
     describe('Monad', function() {
