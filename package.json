@@ -1,24 +1,27 @@
 {
   "name": "laws",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Verifies structures against fantasy-land algebra",
   "main": "lib/index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "gulp test"
   },
-  "author": "Reagan Thomas <reagan@reaganthomas.com> (http://reaganthomas.com)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/reaganthomas/algebra.laws.git"
+  },
+  "keywords": ["laws","monads","fantasy-land","folktale","algebra"],
+  "author": "Reagan Thomas",
   "license": "MIT",
-  "devDependencies": {
-    "deep-equal": "^1.0.0",
-    "gulp": "^3.9.0",
-    "gulp-mocha": "^2.1.3",
-    "hifive": "^0.4.0",
-    "hifive-tap": "^0.3.0"
+  "bugs": {
+    "url": "https://github.com/reaganthomas/algebra.laws/issues"
   },
   "dependencies": {
     "claire": "^0.4.1"
+  },
+  "devDependencies": {
+    "deep-equal": "1.0.0",
+    "gulp": "3.9.0",
+    "gulp-mocha": "2.1.3"
   }
 }
