@@ -13,6 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "deep-equal": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-mocha": "^2.1.3",
     "hifive": "^0.4.0",
     "hifive-tap": "^0.3.0"
   },
