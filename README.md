@@ -1,5 +1,13 @@
 # algebra.laws
 
+[![NPM](https://nodei.co/npm/algebra.laws.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.com/package/algebra.laws)
+
+[![npm version](https://badge.fury.io/js/algebra.laws.svg)](http://badge.fury.io/js/algebra.laws)
+[![Coverage Status](https://coveralls.io/repos/reaganthomas/algebra.laws/badge.svg?branch=master&service=github)](https://coveralls.io/github/reaganthomas/algebra.laws?branch=master)
+[![Build Status](https://travis-ci.org/reaganthomas/algebra.laws.svg)](https://travis-ci.org/reaganthomas/algebra.laws)
+[![Dependency Status](https://david-dm.org/reaganthomas/algebra.laws.svg)](https://david-dm.org/reaganthomas/algebra.laws)
+
+
 Validates algebraic structures' laws. Laws conform to the [Fantasy Land][] specification.
 
 [Fantasy Land]: https://github.com/fantasyland/fantasy-land

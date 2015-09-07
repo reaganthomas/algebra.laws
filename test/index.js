@@ -1,11 +1,8 @@
 (function() {
   'use strict';
 
-  var Identity = require('./identity');
-  var laws = require('../src');
-  var claire = require('claire');
-  var _ = claire.data;
-  var forAll = claire.forAll;
+  var Identity = require('algebra.structures.identity');
+  var laws = require('../lib');
 
   function makeId(a)    { return new Identity(a); }
   function makeNelId(a) { return new Identity([a]); }
@@ -33,9 +30,7 @@
     });
 
     describe('Chain', function() {
-      it('1. Associativity', function() {
-        laws.chain.associativity(makeId).asTest()();
-      });
+      it('1. Associativity', function() { laws.chain.associativity(makeId).asTest()(); });
     });
 
     describe('Monad', function() {
