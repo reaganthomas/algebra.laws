@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  var Identity = require('algebra.structures.identity');
+  var Identity = require('./identity');
   var laws = require('../lib');
 
   function makeId(a)    { return new Identity(a); }
