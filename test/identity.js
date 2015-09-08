@@ -3,14 +3,13 @@
 
 (function() {
   var deepEqual = require('deep-equal');
-  var Constructor = require('algebra.structures.constructor').Constructor;
 
   function inspect(x) { return x.inspect ? x.inspect() : x; }
 
-  var Identity = Constructor(function(value) {
+  var Identity = function(value) {
     this.isEmpty = false;
     this.value = value;
-  });
+  };
 
   Identity.prototype.empty = function() {
     var id = new Identity();
